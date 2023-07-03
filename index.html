@@ -15,8 +15,36 @@
 
     <title>Frontend Mentor | Art gallery website</title>
   </head>
-  <body class="bg-almost-black font-sans">
-    <div class="mt-10 flex flex-col justify-center text-center gap-4">
+  <body class="font-sans">
+    <picture>
+      <source
+        srcset="
+          ./images/desktop/image-hero.jpg    540w,
+          ./images/tablet/image-hero@2x.jpg 1080w
+        "
+        media="(min-width: 80em)"
+      />
+      <source
+        srcset="
+          ./images/tablet/image-hero.jpg    437w,
+          ./images/tablet/image-hero@2x.jpg 874w
+        "
+        media="(min-width: 48em)"
+      />
+      <img
+        class="w-max"
+        src="./images/mobile/image-hero.jpg"
+        alt="hero art"
+        width="375px"
+        height="240px"
+        loading="lazy"
+        srcset="
+          ./images/mobile/image-hero.jpg    375w,
+          ./images/mobile/image-hero@2x.jpg 750w
+        "
+      />
+    </picture>
+    <div class="mt-10 flex flex-col justify-center gap-4 text-center">
       <h1 class="text-heading-xl text-gold">Hello World!</h1>
       <h1 class="text-heading-l text-gold">Hello World!</h1>
       <h1 class="text-heading-m text-gold">Hello World!</h1>

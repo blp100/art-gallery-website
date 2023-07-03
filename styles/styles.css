@@ -537,6 +537,24 @@ video {
   display: flex;
 }
 
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-auto{
+  width: auto;
+}
+
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-screen{
+  width: 100vw;
+}
+
 .flex-row{
   flex-direction: row;
 }
