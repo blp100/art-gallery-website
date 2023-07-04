@@ -541,8 +541,12 @@ video {
   margin-top: 0.125rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
 }
 
 .mt-6{
@@ -551,14 +555,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .inline-block{
@@ -574,16 +570,20 @@ video {
   width: max-content;
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
 }
 
-.justify-center{
-  justify-content: center;
+.gap-\[38px\]{
+  gap: 38px;
 }
 
-.gap-4{
-  gap: 1rem;
+.gap-5{
+  gap: 1.25rem;
 }
 
 .bg-almost-black{
@@ -605,6 +605,21 @@ video {
   padding-right: 1rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -623,22 +638,12 @@ video {
   padding-right: 2.25rem;
 }
 
-.text-center{
-  text-align: center;
-}
-
 .font-cursive{
   font-family: Big Shoulders Display, cursive;
 }
 
 .font-sans{
   font-family: Outfit, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.text-body-m{
-  font-size: 1.375rem;
-  line-height: 2rem;
-  font-weight: 300;
 }
 
 .text-body-s{
@@ -653,27 +658,27 @@ video {
   font-weight: 800;
 }
 
-.text-heading-l{
-  font-size: 4.375rem;
-  line-height: 4.375rem;
-  font-weight: 900;
-}
-
-.text-heading-m{
-  font-size: 3.75rem;
-  line-height: 3.125rem;
-  font-weight: 900;
-}
-
 .text-heading-sm-m{
   font-size: 3.125rem;
   line-height: 2.813rem;
   font-weight: 900;
 }
 
-.text-heading-xl{
-  font-size: 6rem;
-  line-height: 5.5rem;
+.text-body-sm-s{
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 300;
+}
+
+.text-body-sm-m{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+}
+
+.text-heading-sm-l{
+  font-size: 3.75rem;
+  line-height: 3.438rem;
   font-weight: 900;
 }
 
@@ -681,24 +686,19 @@ video {
   text-transform: uppercase;
 }
 
+.text-almost-black{
+  --tw-text-opacity: 1;
+  color: rgb(21 21 21 / var(--tw-text-opacity));
+}
+
 .text-dark-grey{
   --tw-text-opacity: 1;
   color: rgb(68 68 68 / var(--tw-text-opacity));
 }
 
-.text-gold{
-  --tw-text-opacity: 1;
-  color: rgb(213 150 108 / var(--tw-text-opacity));
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-almost-black{
-  --tw-text-opacity: 1;
-  color: rgb(21 21 21 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){

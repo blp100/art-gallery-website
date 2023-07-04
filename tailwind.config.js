@@ -83,6 +83,20 @@ module.exports = {
           fontWeight: "300",
         },
       ],
+      "body-sm-m": [
+        "1.125rem",
+        {
+          lineHeight: "1.75rem",
+          fontWeight: "300",
+        },
+      ],
+      "body-sm-s": [
+        "1rem",
+        {
+          lineHeight: "1.625rem",
+          fontWeight: "300",
+        },
+      ],
       // button text size
       "btn-size": [
         "1.25rem",
