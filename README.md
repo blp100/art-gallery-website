@@ -5,4 +5,5 @@
     - REF: https://web.dev/learn/design/picture-element/
            https://web.dev/learn/design/responsive-images/
            https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes
-07.04 setting up mobile index.html, nothing much, maybe will conquer grid system
+07.04 setting up mobile index.html
+    - <span styles="display: inline-block"></span> replace <br /> for Responsive setting
