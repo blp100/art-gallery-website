@@ -15,54 +15,165 @@
 
     <title>Frontend Mentor | Art gallery website</title>
   </head>
-  <body class="font-sans">
-    <picture>
-      <source
-        srcset="
-          ./images/desktop/image-hero.jpg    540w,
-          ./images/tablet/image-hero@2x.jpg 1080w
-        "
-        media="(min-width: 80em)"
-      />
-      <source
-        srcset="
-          ./images/tablet/image-hero.jpg    437w,
-          ./images/tablet/image-hero@2x.jpg 874w
-        "
-        media="(min-width: 48em)"
-      />
+  <body>
+    <header>
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/image-hero.jpg     540w,
+            ./images/desktop/image-hero@2x.jpg 1080w
+          "
+          media="(min-width: 80em)"
+        />
+        <source
+          srcset="
+            ./images/tablet/image-hero.jpg    437w,
+            ./images/tablet/image-hero@2x.jpg 874w
+          "
+          media="(min-width: 48em)"
+        />
+        <img
+          class="w-max"
+          src="./images/mobile/image-hero.jpg"
+          alt="hero art"
+          width="375px"
+          height="240px"
+          loading="lazy"
+          srcset="
+            ./images/mobile/image-hero.jpg    375w,
+            ./images/mobile/image-hero@2x.jpg 750w
+          "
+        />
+      </picture>
       <img
-        class="w-max"
-        src="./images/mobile/image-hero.jpg"
-        alt="hero art"
-        width="375px"
-        height="240px"
+        class="ml-4 mt-8"
+        src="./images/logo-dark.svg"
+        alt="Mordern Art gallery Logo"
+        width="278.74px"
+        height="104.2px"
         loading="lazy"
-        srcset="
-          ./images/mobile/image-hero.jpg    375w,
-          ./images/mobile/image-hero@2x.jpg 750w
-        "
       />
-    </picture>
-    <div class="mt-10 flex flex-col justify-center gap-4 text-center">
-      <h1 class="text-heading-xl text-gold">Hello World!</h1>
-      <h1 class="text-heading-l text-gold">Hello World!</h1>
-      <h1 class="text-heading-m text-gold">Hello World!</h1>
-      <h1 class="text-heading-s text-gold">Hello World!</h1>
-      <p class="text-body-m text-white">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-        hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
-        vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-        nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+      <p class="mx-4 mt-8 font-sans text-body-s text-dark-grey">
+        The arts in the collection of the Modern Art Gallery all started from a
+        spark of inspiration. Will these pieces inspire you? Visit us and find
+        out.
       </p>
-      <p class="text-body-s text-white">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-        hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
-        vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-        nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+      <a class="ml-4 mt-8 flex">
+        <span
+          class="bg-almost-black py-6 pl-8 pr-9 font-cursive text-btn-size text-white"
+        >
+          OUR LOCATION
+        </span>
+        <div class="bg-gold p-6">
+          <img
+            class="mt-0.5"
+            src="./images/icon-arrow-right.svg"
+            alt="right arrow icon"
+            width="10px"
+            height="24px"
+            loading="lazy"
+          />
+        </div>
+      </a>
+    </header>
+    <section class="px-4 py-[7.5rem]">
+      <picture>
+        <source
+          src="
+            ./images/desktop/image-grid-1.jpg    635w,
+            ./images/desktop/image-grid-1@2x.jpg 1270w
+          "
+          media="(min-width: 80em)"
+        />
+        <source
+          srcset="
+            ./images/tablet/image-grid-1.jpg    398w,
+            ./images/tablet/image-grid-1@2x.jpg 796w
+          "
+          media="(min-width: 48em)"
+        />
+        <img
+          class="w-max"
+          src="./images/mobile/image-grid-1.jpg"
+          alt="first of art gallery pictures"
+          width="343px"
+          height="320px"
+          loading="lazy"
+          srcset="
+            ./images/mobile/image-grid-1.jpg    343w,
+            ./images/mobile/image-grid-1@2x.jpg 686w
+          "
+        />
+      </picture>
+      <h2
+        class="mt-6 font-cursive text-heading-sm-m uppercase text-almost-black"
+      >
+        Your Day <span class="inline-block md:inline">at the Gallery </span>
+      </h2>
+      <p class="mt-5 font-sans text-body-s text-dark-grey">
+        Wander through our distinct collections and find new insights about our
+        artists. Dive into the details of their creative process.
       </p>
-    </div>
+      <div class="mt-4">
+        <picture class="mt-4">
+          <source
+            src="
+            ./images/desktop/image-grid-2.jpg    635w,
+            ./images/desktop/image-grid-2@2x.jpg 1270w
+          "
+            media="(min-width: 80em)"
+          />
+          <source
+            srcset="
+              ./images/tablet/image-grid-2.jpg    398w,
+              ./images/tablet/image-grid-2@2x.jpg 796w
+            "
+            media="(min-width: 48em)"
+          />
+          <img
+            class="w-max"
+            src="./images/mobile/image-grid-2.jpg"
+            alt="second of art gallery pictures"
+            width="343px"
+            height="320px"
+            loading="lazy"
+            srcset="
+              ./images/mobile/image-grid-2.jpg    343w,
+              ./images/mobile/image-grid-2@2x.jpg 686w
+            "
+          />
+        </picture>
+      </div>
+      <div class="mt-4">
+        <picture>
+          <source
+            src="
+            ./images/desktop/image-grid-3.jpg    445w,
+            ./images/desktop/image-grid-3@2x.jpg 890w
+          "
+            media="(min-width: 80em)"
+          />
+          <source
+            srcset="
+              ./images/tablet/image-grid-3.jpg    280w,
+              ./images/tablet/image-grid-3@2x.jpg 560w
+            "
+            media="(min-width: 48em)"
+          />
+          <img
+            class="w-max"
+            src="./images/mobile/image-grid-3.jpg"
+            alt="thrid of art gallery pictures"
+            width="343px"
+            height="320px"
+            loading="lazy"
+            srcset="
+              ./images/mobile/image-grid-3.jpg    343w,
+              ./images/mobile/image-grid-3@2x.jpg 686w
+            "
+          />
+        </picture>
+      </div>
+    </section>
   </body>
 </html>

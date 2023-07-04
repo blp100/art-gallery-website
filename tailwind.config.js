@@ -31,13 +31,44 @@ module.exports = {
           fontWeight: "900",
         },
       ],
-      "heading-s": [
-        "2.25rem",
+      // tablet size
+      "heading-md-xl": [
+        "4.375rem",
         {
-          lineHeight: "2.25rem",
+          lineHeight: "4.063rem",
           fontWeight: "900",
         },
       ],
+      "heading-md-l": [
+        "3.438rem",
+        {
+          lineHeight: "3.125rem",
+          fontWeight: "900",
+        },
+      ],
+      // mobile size
+      "heading-sm-l": [
+        "3.75rem",
+        {
+          lineHeight: "3.438rem",
+          fontWeight: "900",
+        },
+      ],
+      "heading-sm-m": [
+        "3.125rem",
+        {
+          lineHeight: "2.813rem",
+          fontWeight: "900",
+        },
+      ],
+      "heading-sm-s": [
+        "2rem",
+        {
+          lineHeight: "2rem",
+          fontWeight: "900",
+        },
+      ],
+      // body text size
       "body-m": [
         "1.375rem",
         {
@@ -52,10 +83,19 @@ module.exports = {
           fontWeight: "300",
         },
       ],
+      // button text size
+      "btn-size": [
+        "1.25rem",
+        {
+          fontWeight: "800",
+          letterSpacing: "3.636px",
+        },
+      ],
     },
     extend: {
       fontFamily: {
-        sans: ["Big Shoulders Display", ...defaultTheme.fontFamily.sans],
+        cursive: ["Big Shoulders Display", "cursive"],
+        sans: ["Outfit", ...defaultTheme.fontFamily.sans],
       },
     },
   },
