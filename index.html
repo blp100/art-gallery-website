@@ -18,34 +18,36 @@
   <body>
     <header>
       <div class="md:flex md:items-center">
-        <picture>
-          <source
-            srcset="
-              ./images/desktop/image-hero.jpg     540w,
-              ./images/desktop/image-hero@2x.jpg 1080w
-            "
-            media="(min-width: 80em)"
-          />
-          <source
-            srcset="
-              ./images/tablet/image-hero.jpg    437w,
-              ./images/tablet/image-hero@2x.jpg 874w
-            "
-            media="(min-width: 48em)"
-          />
-          <img
-            class="w-max md:w-[437px]"
-            src="./images/mobile/image-hero.jpg"
-            alt="hero art"
-            width="375px"
-            height="240px"
-            loading="lazy"
-            srcset="
-              ./images/mobile/image-hero.jpg    375w,
-              ./images/mobile/image-hero@2x.jpg 750w
-            "
-          />
-        </picture>
+        <div class="md:w-7/12">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/image-hero.jpg     540w,
+                ./images/desktop/image-hero@2x.jpg 1080w
+              "
+              media="(min-width: 80em)"
+            />
+            <source
+              srcset="
+                ./images/tablet/image-hero.jpg    437w,
+                ./images/tablet/image-hero@2x.jpg 874w
+              "
+              media="(min-width: 48em)"
+            />
+            <img
+              class="w-max"
+              src="./images/mobile/image-hero.jpg"
+              alt="hero art"
+              width="375px"
+              height="240px"
+              loading="lazy"
+              srcset="
+                ./images/mobile/image-hero.jpg    375w,
+                ./images/mobile/image-hero@2x.jpg 750w
+              "
+            />
+          </picture>
+        </div>
         <!-- Text with black and white can use "css filter" -->
         <div
           class="mt-8 flex flex-col gap-8 px-4 md:-ml-12 md:mt-0 md:w-[340px] md:gap-12 md:px-0"
@@ -80,7 +82,7 @@
         </div>
       </div>
     </header>
-    <section class="px-4 py-[7.5rem] md:px-10">
+    <section class="px-4 py-[7.5rem] md:mx-auto md:max-w-3xl md:px-10">
       <div class="grid md:grid-cols-[auto_398px] md:gap-3">
         <picture class="md:w-[398px]">
           <source
@@ -197,17 +199,19 @@
     </section>
     <footer class="bg-almost-black">
       <div
-        class="mx-auto flex flex-col gap-[38px] px-8 py-12 md:max-w-3xl md:flex-row md:gap-16 md:px-10 md:py-14"
+        class="mx-auto flex flex-col gap-[38px] px-8 py-12 md:max-w-3xl md:flex-row md:gap-16 md:px-10 md:py-14 xl:max-w-screen-xl xl:gap-[140px] xl:px-[164px] xl:py-20"
       >
         <img
-          class="h-10"
+          class="h-10 xl:w-40 xl:h-14"
           src="./images/logo-light.svg"
           alt="Mordern Art gallery Logo"
           width="110px"
           height="40px"
           loading="lazy"
         />
-        <p class="font-sans text-body-sm-s text-white md:mr-16 md:w-72">
+        <p
+          class="font-sans text-body-sm-s text-white md:mr-16 md:w-72 xl:w-6/12 xl:text-body-s flex-grow"
+        >
           The Modern Art Gallery is free to all visitors and open seven days a
           week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
         </p>
