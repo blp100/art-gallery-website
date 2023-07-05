@@ -17,62 +17,64 @@
   </head>
   <body>
     <header>
-      <picture>
-        <source
-          srcset="
-            ./images/desktop/image-hero.jpg     540w,
-            ./images/desktop/image-hero@2x.jpg 1080w
-          "
-          media="(min-width: 80em)"
-        />
-        <source
-          srcset="
-            ./images/tablet/image-hero.jpg    437w,
-            ./images/tablet/image-hero@2x.jpg 874w
-          "
-          media="(min-width: 48em)"
-        />
-        <img
-          class="w-max"
-          src="./images/mobile/image-hero.jpg"
-          alt="hero art"
-          width="375px"
-          height="240px"
-          loading="lazy"
-          srcset="
-            ./images/mobile/image-hero.jpg    375w,
-            ./images/mobile/image-hero@2x.jpg 750w
-          "
-        />
-      </picture>
-      <!-- Text with black and white can use "css filter" -->
-      <div class="mt-8 flex flex-col gap-8 px-4">
-        <h1 class="font-cursive text-heading-sm-l text-almost-black">
-          MODERN<br />ART GALLERY
-        </h1>
-        <p class="font-sans text-body-sm-m text-dark-grey">
-          The arts in the collection of the Modern Art Gallery all started from
-          a spark of inspiration. Will these pieces inspire you? Visit us and
-          find out.
-        </p>
-        <a class="flex">
-          <span
-            class="bg-almost-black py-6 pl-8 pr-9 font-cursive text-btn-size text-white"
-          >
-            OUR LOCATION
-          </span>
-          <div class="bg-gold p-6">
-            <img
-              class="mt-0.5"
-              src="./images/icon-arrow-right.svg"
-              alt="right arrow icon"
-              width="10px"
-              height="24px"
-              loading="lazy"
-            />
+      <div class="md:flex md:items-center">
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/image-hero.jpg     540w,
+              ./images/desktop/image-hero@2x.jpg 1080w
+            "
+            media="(min-width: 80em)"
+          />
+          <source
+            srcset="
+              ./images/tablet/image-hero.jpg    437w,
+              ./images/tablet/image-hero@2x.jpg 874w
+            "
+            media="(min-width: 48em)"
+          />
+          <img
+            class="w-max md:w-[437px]"
+            src="./images/mobile/image-hero.jpg"
+            alt="hero art"
+            width="375px"
+            height="240px"
+            loading="lazy"
+            srcset="
+              ./images/mobile/image-hero.jpg    375w,
+              ./images/mobile/image-hero@2x.jpg 750w
+            "
+          />
+        </picture>
+        <!-- Text with black and white can use "css filter" -->
+          <div class="mt-8 md:mt-0 md:px-0 flex flex-col gap-8 md:gap-12 px-4 md:w-[340px] md:-ml-12">
+            <h1 class="font-cursive text-heading-sm-l text-almost-black md:text-heading-md-xl">
+              MODERN<br />ART GALLERY
+            </h1>
+            <p class="font-sans text-body-sm-m text-dark-grey">
+              The arts in the collection of the Modern Art Gallery all started
+              from a spark of inspiration. Will these pieces inspire you? Visit
+              us and find out.
+            </p>
+            <a class="flex">
+              <span
+                class="bg-almost-black py-6 pl-8 pr-9 font-cursive text-btn-size text-white"
+              >
+                OUR LOCATION
+              </span>
+              <div class="bg-gold p-6">
+                <img
+                  class="mt-0.5"
+                  src="./images/icon-arrow-right.svg"
+                  alt="right arrow icon"
+                  width="10px"
+                  height="24px"
+                  loading="lazy"
+                />
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
+        </div>
     </header>
     <section class="px-4 py-[7.5rem] md:px-10">
       <div class="grid md:grid-cols-[auto_398px] md:gap-3">
