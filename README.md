@@ -9,3 +9,5 @@
     - <span styles="display: inline-block"></span> replace <br /> for Responsive setting
 07.05 study grid system
     - REF: https://css-tricks.com/snippets/css/complete-guide-grid/
+    - thinking about iOS scorlling down will reveal background
+    - can solve with body background color setting
