@@ -7,3 +7,5 @@
            https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes
 07.04 setting up mobile index.html
     - <span styles="display: inline-block"></span> replace <br /> for Responsive setting
+07.05 study grid system
+    - REF: https://css-tricks.com/snippets/css/complete-guide-grid/
