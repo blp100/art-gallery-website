@@ -13,3 +13,4 @@
     - can solve with body background color setting
 07.06
     - Forget to chane `src` attribute to `srcset` setting  in <picture> element cause display problem
+    - Attempt: first try, it work to change text color by background, but the result it's not I want to.
