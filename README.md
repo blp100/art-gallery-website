@@ -14,3 +14,7 @@
 07.06
     - Forget to chane `src` attribute to `srcset` setting  in <picture> element cause display problem
     - Attempt: first try, it work to change text color by background, but the result it's not I want to.
+    - Find good gradient webtool
+        - REF: https://hypercolor.dev/
+        - REF: https://cssgradient.io/
+    - To access a parameter that you have set in the `tailwind.config.js` file using the syntax `${theme("colors.white")}`. This will retrieve the value of the `colors.white` parameter defined in your Tailwind CSS configuration.
