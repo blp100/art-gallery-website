@@ -11,3 +11,5 @@
     - REF: https://css-tricks.com/snippets/css/complete-guide-grid/
     - thinking about iOS scorlling down will reveal background
     - can solve with body background color setting
+07.06
+    - Forget to chane `src` attribute to `srcset` setting  in <picture> element cause display problem
