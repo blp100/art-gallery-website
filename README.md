@@ -12,8 +12,9 @@
     - thinking about iOS scorlling down will reveal background
     - can solve with body background color setting
 07.06
-    - Forget to chane `src` attribute to `srcset` setting  in <picture> element cause display problem
+    - Forget to change `src` attribute to `srcset` setting  in <picture> element cause display problem
     - Attempt: first try, it work to change text color by background, but the result it's not I want to.
+        - REF: https://css-tricks.com/methods-contrasting-text-backgrounds/
     - Find good gradient webtool
         - REF: https://hypercolor.dev/
         - REF: https://cssgradient.io/
