@@ -18,7 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -524,6 +524,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute{
+  position: absolute;
+}
+
+.left-\[39\%\]{
+  left: 39%;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -573,6 +581,10 @@ video {
   height: 1.25rem;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .w-max{
   width: -moz-max-content;
   width: max-content;
@@ -585,6 +597,10 @@ video {
 
 .flex-grow{
   flex-grow: 1;
+}
+
+.basis-1\/2{
+  flex-basis: 50%;
 }
 
 .flex-row{
@@ -611,6 +627,10 @@ video {
   gap: 38px;
 }
 
+.text-clip{
+  text-overflow: clip;
+}
+
 .bg-almost-black{
   --tw-bg-opacity: 1;
   background-color: rgb(21 21 21 / var(--tw-bg-opacity));
@@ -619,6 +639,20 @@ video {
 .bg-gold{
   --tw-bg-opacity: 1;
   background-color: rgb(213 150 108 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gradient-white-to-black{
+  background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49.9999%, rgba(21,21,21,1) 50%, rgba(21,21,21,1) 100%);
+}
+
+.bg-clip-text{
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .p-6{
@@ -715,9 +749,21 @@ video {
   color: rgb(68 68 68 / var(--tw-text-opacity));
 }
 
+.text-transparent{
+  color: transparent;
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-opacity-0{
+  --tw-text-opacity: 0;
+}
+
+.bg-blend-lighten{
+  background-blend-mode: lighten;
 }
 
 .filter{
@@ -792,10 +838,6 @@ video {
 
   .md\:grid-cols-\[398px_280px\]{
     grid-template-columns: 398px 280px;
-  }
-
-  .md\:grid-cols-\[auto_635px\]{
-    grid-template-columns: auto 635px;
   }
 
   .md\:grid-cols-\[auto_398px\]{
@@ -919,18 +961,14 @@ video {
     gap: 30px;
   }
 
-  .xl\:p-20{
-    padding: 5rem;
-  }
-
   .xl\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
   }
 
-  .xl\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .xl\:px-\[85px\]{
+    padding-left: 85px;
+    padding-right: 85px;
   }
 
   .xl\:py-16{
@@ -938,19 +976,9 @@ video {
     padding-bottom: 4rem;
   }
 
-  .xl\:px-\[90px\]{
-    padding-left: 90px;
-    padding-right: 90px;
-  }
-
   .xl\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .xl\:px-\[85px\]{
-    padding-left: 85px;
-    padding-right: 85px;
   }
 
   .xl\:text-body-m{

@@ -3,12 +3,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./index.html"],
   theme: {
-    colors: {
-      gold: "#D5966C",
-      white: "#FFFFFF",
-      "almost-black": "#151515",
-      "dark-grey": "#444444",
-    },
     fontSize: {
       "heading-xl": [
         "6rem",
@@ -110,6 +104,15 @@ module.exports = {
       fontFamily: {
         cursive: ["Big Shoulders Display", "cursive"],
         sans: ["Outfit", ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        gold: "#D5966C",
+        white: "#FFFFFF",
+        "almost-black": "#151515",
+        "dark-grey": "#444444",
+      },
+      backgroundImage: {
+        'gradient-white-to-black': `linear-gradient(90deg, ${theme("colors.white")} 0%, ${theme("colors.white")} 49.9999%, ${theme("colors.almost-black")} 50%, ${theme("colors.almost-black")} 100%)`,
       },
     },
   },
