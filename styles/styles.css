@@ -619,6 +619,11 @@ video {
   width: 339px;
 }
 
+.min-w-fit{
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
 .flex-grow{
   flex-grow: 1;
 }
@@ -1030,6 +1035,10 @@ video {
     margin-right: 140px;
   }
 
+  .xl\:mr-0{
+    margin-right: 0px;
+  }
+
   .xl\:h-14{
     height: 3.5rem;
   }
@@ -1058,8 +1067,33 @@ video {
     width: 10rem;
   }
 
+  .xl\:w-7\/12{
+    width: 58.333333%;
+  }
+
+  .xl\:w-5\/6{
+    width: 83.333333%;
+  }
+
+  .xl\:min-w-fit{
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+
+  .xl\:min-w-full{
+    min-width: 100%;
+  }
+
   .xl\:max-w-screen-xl{
     max-width: 1280px;
+  }
+
+  .xl\:max-w-screen-2xl{
+    max-width: 1536px;
+  }
+
+  .xl\:max-w-\[1440px\]{
+    max-width: 1440px;
   }
 
   .xl\:gap-\[140px\]{
