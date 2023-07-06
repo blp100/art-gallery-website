@@ -82,14 +82,18 @@
         </div>
       </div>
     </header>
-    <section class="px-4 py-[7.5rem] md:mx-auto md:max-w-3xl md:px-10">
-      <div class="grid md:grid-cols-[auto_398px] md:gap-3">
-        <picture class="md:w-[398px]">
+    <section
+      class="px-4 py-[7.5rem] md:mx-auto md:max-w-3xl md:px-10 xl:max-w-screen-xl xl:px-[85px]"
+    >
+      <div
+        class="grid md:grid-cols-[auto_398px] md:gap-3 xl:grid-cols-[auto_635px]"
+      >
+        <picture class="md:w-[398px] xl:w-[635px]">
           <source
-            src="
-            ./images/desktop/image-grid-1.jpg    635w,
-            ./images/desktop/image-grid-1@2x.jpg 1270w
-          "
+            srcset="
+              ./images/desktop/image-grid-1.jpg     635w,
+              ./images/desktop/image-grid-1@2x.jpg 1270w
+            "
             media="(min-width: 80em)"
           />
           <source
@@ -112,38 +116,40 @@
             "
           />
         </picture>
-        <div class="md:-order-1 md:w-[223px]">
+        <div class="md:-order-1 md:w-[223px] xl:w-[350px]">
           <h2
-            class="mt-6 font-cursive text-heading-sm-m uppercase text-almost-black"
+            class="mt-6 font-cursive text-heading-sm-m uppercase text-almost-black xl:mt-[60px] xl:text-heading-m"
           >
             Your Day
             <span class="inline-block"
               >at the <span class="md:inline-block">Gallery</span></span
             >
           </h2>
-          <p class="mt-5 font-sans text-body-sm-m text-dark-grey">
+          <p
+            class="mt-5 font-sans text-body-sm-m text-dark-grey md:mt-6 xl:mt-8 xl:text-body-m"
+          >
             Wander through our distinct collections and find new insights about
             our artists. Dive into the details of their creative process.
           </p>
         </div>
       </div>
       <div
-        class="mt-4 grid gap-4 md:mt-3 md:grid-cols-[398px_280px] md:grid-rows-[313px_auto] md:gap-3"
+        class="mt-4 grid gap-4 md:mt-3 md:grid-cols-[398px_280px] md:grid-rows-[313px_auto] md:gap-3 xl:mt-[30px] xl:grid-cols-[635px_445px] xl:grid-rows-[313px_auto] xl:gap-[30px]"
       >
         <picture class="md:row-span-2">
           <source
-            src="
-            ./images/desktop/image-grid-2.jpg    635w,
-            ./images/desktop/image-grid-2@2x.jpg 1270w
-          "
-            media="(min-width: 80em)"
+            srcset="
+              ./images/desktop/image-grid-2.jpg     635w,
+              ./images/desktop/image-grid-2@2x.jpg 1270w
+            "
+            media="(min-width: 1280px)"
           />
           <source
             srcset="
               ./images/tablet/image-grid-2.jpg    398w,
               ./images/tablet/image-grid-2@2x.jpg 796w
             "
-            media="(min-width: 48em)"
+            media="(min-width: 768px)"
           />
           <img
             class="w-max"
@@ -160,18 +166,18 @@
         </picture>
         <picture>
           <source
-            src="
-            ./images/desktop/image-grid-3.jpg    445w,
-            ./images/desktop/image-grid-3@2x.jpg 890w
-          "
-            media="(min-width: 80em)"
+            srcset="
+              ./images/desktop/image-grid-3.jpg    445w,
+              ./images/desktop/image-grid-3@2x.jpg 890w
+            "
+            media="(min-width: 1280px)"
           />
           <source
             srcset="
               ./images/tablet/image-grid-3.jpg    280w,
               ./images/tablet/image-grid-3@2x.jpg 560w
             "
-            media="(min-width: 48em)"
+            media="(min-width: 768px)"
           />
           <img
             class="w-max"
@@ -186,11 +192,15 @@
             "
           />
         </picture>
-        <div class="bg-almost-black px-6 py-12 text-white md:px-7 md:py-[85px]">
-          <h2 class="font-cursive text-heading-sm-m uppercase">
+        <div
+          class="bg-almost-black px-6 py-12 text-white md:px-7 md:py-[85px] xl:px-12 xl:py-16"
+        >
+          <h2
+            class="font-cursive text-heading-sm-m uppercase xl:text-heading-m"
+          >
             COME & BE INSPIRED
           </h2>
-          <p class="mt-6 font-sans text-body-sm-m">
+          <p class="mt-6 font-sans text-body-sm-m xl:mt-8 xl:text-body-m">
             We’re excited to welcome you to our gallery and see how our
             collections influence you.
           </p>
@@ -199,7 +209,7 @@
     </section>
     <footer class="bg-almost-black">
       <div
-        class="mx-auto flex flex-col gap-[38px] px-8 py-12 md:max-w-3xl md:flex-row md:gap-16 md:px-10 md:py-14 xl:max-w-[1440px] xl:gap-[140px] xl:px-[164px] xl:py-20"
+        class="mx-auto flex flex-col gap-[38px] px-8 py-12 md:max-w-3xl md:flex-row md:gap-16 md:px-10 md:py-14 xl:max-w-screen-xl xl:gap-[140px] xl:py-20 xl:px-[85px]"
       >
         <img
           class="h-10 xl:h-14 xl:w-40"
@@ -210,7 +220,7 @@
           loading="lazy"
         />
         <p
-          class="flex-grow font-sans text-body-sm-s text-white md:mr-16 md:w-72 xl:w-[430px] xl:mr-[140px] xl:text-body-s"
+          class="flex-grow font-sans text-body-sm-s text-white md:mr-16 md:w-72 xl:mr-[140px] xl:w-[430px] xl:text-body-s"
         >
           The Modern Art Gallery is free to all visitors and open seven days a
           week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
