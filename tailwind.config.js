@@ -112,7 +112,7 @@ module.exports = {
         "dark-grey": "#444444",
       },
       backgroundImage: {
-        'gradient-white-to-black': "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49.9999%, rgba(21,21,21,1) 50%, rgba(21,21,21,1) 100%)",
+        'gradient-white-to-black': "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 55.6420%, rgba(21,21,21,1) 55.6421%, rgba(21,21,21,1) 100%)",
       },
     },
   },

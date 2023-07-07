@@ -18,13 +18,16 @@
   <body>
     <header>
       <div class="md:flex md:items-center xl:h-[800px]">
-        <div class="hidden xl:block xl:basis-1/4 xl:h-full xl:bg-almost-black xl:grow">
+        <div
+          class="relative hidden xl:block xl:h-full xl:grow xl:basis-1/4 xl:bg-almost-black"
+        >
           <!-- Blend mode testing -->
           <h1
-            class="relative hidden bg-gradient-white-to-black bg-clip-text font-cursive text-heading-xl text-transparent text-opacity-0 md:text-heading-md-xl xl:block xl:-right-1/2 xl:top-[190px] xl:w-full"
+            class="absolute hidden bg-gradient-white-to-black bg-clip-text font-cursive text-heading-xl text-transparent text-opacity-0  xl:-right-[228px] xl:top-[190px] xl:block xl:w-[514px]"
           >
             MODERN<br />ART&nbsp;GALLERY
-          </h1></div>
+          </h1>
+        </div>
         <div class="md:w-7/12 xl:w-[540px]">
           <picture>
             <source
@@ -55,13 +58,15 @@
             />
           </picture>
         </div>
-        <div class="hidden xl:block xl:ba xl:h-full xl:bg-white xl:grow">
-          <p class="font-sans text-body-m xl:w-[350px] xl:-ml-[65px] xl:mt-[190px]">
+        <div class="hidden xl:basis-1/4 xl:block xl:h-full xl:grow xl:bg-white">
+          <p
+            class="font-sans text-body-m xl:-ml-[65px] xl:mt-[190px] xl:w-[350px]"
+          >
             The arts in the collection of the Modern Art Gallery all started
             from a spark of inspiration. Will these pieces inspire you? Visit us
             and find out.
           </p>
-          <a class="flex xl:-ml-[65px] xl:mt-16 ">
+          <a class="flex xl:-ml-[65px] xl:mt-16" href="./location.html">
             <span
               class="bg-almost-black py-6 pl-8 pr-9 font-cursive text-btn-size text-white"
             >
@@ -81,7 +86,7 @@
         </div>
         <!-- Text with black and white can use "css filter" -->
         <div
-          class="mt-8 flex flex-col gap-8 px-4 md:-ml-12 md:mt-0 md:w-[340px] md:gap-12 md:px-0 xl:flex-grow xl:hidden"
+          class="mt-8 flex flex-col gap-8 px-4 md:-ml-12 md:mt-0 md:w-[340px] md:gap-12 md:px-0 xl:hidden xl:flex-grow"
         >
           <h1
             class="font-cursive text-heading-sm-l text-almost-black md:text-heading-md-xl"
