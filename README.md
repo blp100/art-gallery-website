@@ -12,7 +12,7 @@
     - thinking about iOS scorlling down will reveal background
     - can solve with body background color setting
 07.06
-    - Forget to change `src` attribute to `srcset` setting  in <picture> element cause display problem
+    - Forget to change `src` attribute to `srcset` setting in <picture> element cause display problem
     - Attempt: first try, it work to change text color by background, but the result it's not I want to.
         - REF: https://css-tricks.com/methods-contrasting-text-backgrounds/
     - Find good gradient webtool
@@ -23,4 +23,8 @@
     - Fixed text problem, I did the two things wrong.
         - Attempted using absolute positioning to fix the logo placement but encountered a limitation where CSS cannot combine percentage and numeric values simultaneously.
         - Implemented an alternative approach but forgot to include `position: relative` when using `position: absolute`.
-         
+    - Made an attempt to implement CSS button animation.
+        - Explored the code for button animation, drawing inspiration from a CodePen example.
+            -REF: https://codepen.io/kjbrum/pen/wBBLXx
+        - Learned about the :before CSS pseudo-element and the usage of aria- HTML attributes.
+        - Became more familiar with the transform property and its capabilities. 
