@@ -528,8 +528,24 @@ video {
   position: absolute;
 }
 
+.relative{
+  position: relative;
+}
+
 .left-\[39\%\]{
   left: 39%;
+}
+
+.left-\[38\%\]{
+  left: 38%;
+}
+
+.left-\[38\.5\%\]{
+  left: 38.5%;
+}
+
+.left-\[38\.6\%\]{
+  left: 38.6%;
 }
 
 .mx-auto{
@@ -561,6 +577,14 @@ video {
   margin-top: 2rem;
 }
 
+.-mt-\[65px\]{
+  margin-top: -65px;
+}
+
+.-ml-\[65px\]{
+  margin-left: -65px;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -571,6 +595,10 @@ video {
 
 .grid{
   display: grid;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-10{
@@ -603,6 +631,15 @@ video {
   flex-basis: 50%;
 }
 
+.basis-1\/3{
+  flex-basis: 33.333333%;
+}
+
+.-translate-x-\[20px\]{
+  --tw-translate-x: -20px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -625,10 +662,6 @@ video {
 
 .gap-\[38px\]{
   gap: 38px;
-}
-
-.text-clip{
-  text-overflow: clip;
 }
 
 .bg-almost-black{
@@ -697,6 +730,10 @@ video {
   padding-right: 2.25rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .font-cursive{
   font-family: Big Shoulders Display, cursive;
 }
@@ -733,6 +770,18 @@ video {
   font-size: 3.125rem;
   line-height: 2.813rem;
   font-weight: 900;
+}
+
+.text-heading-xl{
+  font-size: 6rem;
+  line-height: 5.5rem;
+  font-weight: 900;
+}
+
+.text-body-m{
+  font-size: 1.375rem;
+  line-height: 2rem;
+  font-weight: 300;
 }
 
 .uppercase{
@@ -901,6 +950,78 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:top-0{
+    top: 0px;
+  }
+
+  .xl\:top-\[190px\]{
+    top: 190px;
+  }
+
+  .xl\:right-0{
+    right: 0px;
+  }
+
+  .xl\:right-1\/2{
+    right: 50%;
+  }
+
+  .xl\:right-\[52\%\]{
+    right: 52%;
+  }
+
+  .xl\:right-\[60\%\]{
+    right: 60%;
+  }
+
+  .xl\:right-\[58\%\]{
+    right: 58%;
+  }
+
+  .xl\:right-\[59\%\]{
+    right: 59%;
+  }
+
+  .xl\:right-\[50\%\+100px\]{
+    right: 50%+100px;
+  }
+
+  .xl\:-right-20{
+    right: -5rem;
+  }
+
+  .xl\:-right-\[109px\]{
+    right: -109px;
+  }
+
+  .xl\:right-\[190px\]{
+    right: 190px;
+  }
+
+  .xl\:right-\[-190px\]{
+    right: -190px;
+  }
+
+  .xl\:-right-\[190px\]{
+    right: -190px;
+  }
+
+  .xl\:-right-\[116px\]{
+    right: -116px;
+  }
+
+  .xl\:-right-\[120px\]{
+    right: -120px;
+  }
+
+  .xl\:-right-\[-120px\]{
+    right: 120px;
+  }
+
+  .xl\:-right-1\/2{
+    right: -50%;
+  }
+
   .xl\:mr-\[140px\]{
     margin-right: 140px;
   }
@@ -917,8 +1038,70 @@ video {
     margin-top: 60px;
   }
 
+  .xl\:ml-\[65px\]{
+    margin-left: 65px;
+  }
+
+  .xl\:-ml-\[65px\]{
+    margin-left: -65px;
+  }
+
+  .xl\:mr-0{
+    margin-right: 0px;
+  }
+
+  .xl\:mt-\[190px\]{
+    margin-top: 190px;
+  }
+
+  .xl\:mt-\[88px\]{
+    margin-top: 88px;
+  }
+
+  .xl\:mt-16{
+    margin-top: 4rem;
+  }
+
+  .xl\:block{
+    display: block;
+  }
+
+  .xl\:hidden{
+    display: none;
+  }
+
   .xl\:h-14{
     height: 3.5rem;
+  }
+
+  .xl\:h-full{
+    height: 100%;
+  }
+
+  .xl\:h-auto{
+    height: auto;
+  }
+
+  .xl\:h-fit{
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .xl\:h-96{
+    height: 24rem;
+  }
+
+  .xl\:h-screen{
+    height: 100vh;
+  }
+
+  .xl\:h-\[800px\]{
+    height: 800px;
+  }
+
+  .xl\:min-h-max{
+    min-height: -moz-max-content;
+    min-height: max-content;
   }
 
   .xl\:w-40{
@@ -937,8 +1120,48 @@ video {
     width: 635px;
   }
 
+  .xl\:w-\[450px\]{
+    width: 450px;
+  }
+
+  .xl\:w-\[540px\]{
+    width: 540px;
+  }
+
+  .xl\:w-\[514px\]{
+    width: 514px;
+  }
+
+  .xl\:w-full{
+    width: 100%;
+  }
+
+  .xl\:w-\[\(100vw-540px\)\/2\]{
+    width: (100vw-540px)/2;
+  }
+
+  .xl\:min-w-\[540px\]{
+    min-width: 540px;
+  }
+
   .xl\:max-w-screen-xl{
     max-width: 1280px;
+  }
+
+  .xl\:flex-grow{
+    flex-grow: 1;
+  }
+
+  .xl\:grow{
+    flex-grow: 1;
+  }
+
+  .xl\:basis-1\/3{
+    flex-basis: 33.333333%;
+  }
+
+  .xl\:basis-1\/4{
+    flex-basis: 25%;
   }
 
   .xl\:grid-cols-\[635px_445px\]{
@@ -959,6 +1182,16 @@ video {
 
   .xl\:gap-\[30px\]{
     gap: 30px;
+  }
+
+  .xl\:bg-almost-black{
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 21 21 / var(--tw-bg-opacity));
+  }
+
+  .xl\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
   .xl\:px-12{

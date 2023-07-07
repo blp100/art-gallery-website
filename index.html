@@ -17,22 +17,29 @@
   </head>
   <body>
     <header>
-      <div class="md:flex md:items-center">
-        <div class="md:w-7/12">
+      <div class="md:flex md:items-center xl:h-[800px]">
+        <div class="hidden xl:block xl:basis-1/4 xl:h-full xl:bg-almost-black xl:grow">
+          <!-- Blend mode testing -->
+          <h1
+            class="relative hidden bg-gradient-white-to-black bg-clip-text font-cursive text-heading-xl text-transparent text-opacity-0 md:text-heading-md-xl xl:block xl:-right-1/2 xl:top-[190px] xl:w-full"
+          >
+            MODERN<br />ART&nbsp;GALLERY
+          </h1></div>
+        <div class="md:w-7/12 xl:w-[540px]">
           <picture>
             <source
               srcset="
                 ./images/desktop/image-hero.jpg     540w,
                 ./images/desktop/image-hero@2x.jpg 1080w
               "
-              media="(min-width: 80em)"
+              media="(min-width: 1280px)"
             />
             <source
               srcset="
                 ./images/tablet/image-hero.jpg    437w,
                 ./images/tablet/image-hero@2x.jpg 874w
               "
-              media="(min-width: 48em)"
+              media="(min-width: 768px)"
             />
             <img
               class="w-max"
@@ -48,16 +55,40 @@
             />
           </picture>
         </div>
+        <div class="hidden xl:block xl:ba xl:h-full xl:bg-white xl:grow">
+          <p class="font-sans text-body-m xl:w-[350px] xl:-ml-[65px] xl:mt-[190px]">
+            The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit us
+            and find out.
+          </p>
+          <a class="flex xl:-ml-[65px] xl:mt-16 ">
+            <span
+              class="bg-almost-black py-6 pl-8 pr-9 font-cursive text-btn-size text-white"
+            >
+              OUR LOCATION
+            </span>
+            <div class="bg-gold p-6">
+              <img
+                class="mt-0.5"
+                src="./images/icon-arrow-right.svg"
+                alt="right arrow icon"
+                width="10px"
+                height="24px"
+                loading="lazy"
+              />
+            </div>
+          </a>
+        </div>
         <!-- Text with black and white can use "css filter" -->
         <div
-          class="mt-8 flex flex-col gap-8 px-4 md:-ml-12 md:mt-0 md:w-[340px] md:gap-12 md:px-0"
+          class="mt-8 flex flex-col gap-8 px-4 md:-ml-12 md:mt-0 md:w-[340px] md:gap-12 md:px-0 xl:flex-grow xl:hidden"
         >
           <h1
             class="font-cursive text-heading-sm-l text-almost-black md:text-heading-md-xl"
           >
             MODERN<br />ART GALLERY
           </h1>
-          <p class="font-sans text-body-sm-m text-dark-grey">
+          <p class="font-sans text-body-sm-m text-dark-grey xl:text-body-m">
             The arts in the collection of the Modern Art Gallery all started
             from a spark of inspiration. Will these pieces inspire you? Visit us
             and find out.
@@ -82,16 +113,6 @@
         </div>
       </div>
     </header>
-    <!-- Blend mode testing -->
-    <div class="mx-auto flex h-80 flex-row">
-      <div class="basis-1/2 bg-almost-black bg-blend-lighten"></div>
-      <h1
-        class="absolute left-[39%] font-cursive text-heading-sm-l text-opacity-0 bg-clip-text text-transparent md:text-heading-md-xl bg-gradient-white-to-black"
-      >
-        MODERN<br />ART GALLERY
-      </h1>
-      <div class="basis-1/2 bg-white "></div>
-    </div>
     <section
       class="px-4 py-[7.5rem] md:mx-auto md:max-w-3xl md:px-10 xl:max-w-screen-xl xl:px-[85px]"
     >
@@ -104,14 +125,14 @@
               ./images/desktop/image-grid-1.jpg     635w,
               ./images/desktop/image-grid-1@2x.jpg 1270w
             "
-            media="(min-width: 80em)"
+            media="(min-width: 1280px)"
           />
           <source
             srcset="
               ./images/tablet/image-grid-1.jpg    398w,
               ./images/tablet/image-grid-1@2x.jpg 796w
             "
-            media="(min-width: 48em)"
+            media="(min-width: 768px)"
           />
           <img
             class="w-max"
