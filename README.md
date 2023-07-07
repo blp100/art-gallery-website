@@ -19,3 +19,8 @@
         - REF: https://hypercolor.dev/
         - REF: https://cssgradient.io/
     - To access a parameter that you have set in the `tailwind.config.js` file using the syntax `${theme("colors.white")}`. This will retrieve the value of the `colors.white` parameter defined in your Tailwind CSS configuration.
+07.07
+    - Fixed text problem, I did the two things wrong.
+        - Attempted using absolute positioning to fix the logo placement but encountered a limitation where CSS cannot combine percentage and numeric values simultaneously.
+        - Implemented an alternative approach but forgot to include `position: relative` when using `position: absolute`.
+         
