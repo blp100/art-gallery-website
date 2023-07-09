@@ -29,4 +29,6 @@
         - Learned about the :before CSS pseudo-element and the usage of aria- HTML attributes.
         - Became more familiar with the transform property and its capabilities. 
 07.08
-    - attempt to css animation on a button, but still face z-index problem(old enemy?)
+    - Attempt to css animation on a button, but still face z-index problem(old enemy?)
+07.09
+    - Implemented CSS hover animation using ::before and ::after pseudo-elements. Initially unsure if it would work for button animation, but the end result turned out to be impressive. 
