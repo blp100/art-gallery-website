@@ -96,7 +96,7 @@ module.exports = {
         "1.25rem",
         {
           fontWeight: "800",
-          letterSpacing: "3.636px",
+          letterSpacing: "3.6px",
         },
       ],
     },
@@ -113,6 +113,8 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-white-to-black': "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 55.6420%, rgba(21,21,21,1) 55.6421%, rgba(21,21,21,1) 100%)",
+        'gradient-btn-black-to-gold' : "linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(21,21,21,1) 78.2021%, rgba(213,150,108,1) 78.2022%, rgba(213,150,108,1) 100%)",
+        'gradient-btn-gold-to-black' : "linear-gradient(90deg, rgba(213,150,108,1) 0%, rgba(213,150,108,1) 78.2021%, rgba(21,21,21,1) 78.2022%, rgba(21,21,21,1) 100%)",
       },
     },
   },
