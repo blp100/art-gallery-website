@@ -28,3 +28,5 @@
             -REF: https://codepen.io/kjbrum/pen/wBBLXx
         - Learned about the :before CSS pseudo-element and the usage of aria- HTML attributes.
         - Became more familiar with the transform property and its capabilities. 
+07.08
+    - attempt to css animation on a button, but still face z-index problem(old enemy?)
