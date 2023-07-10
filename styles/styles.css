@@ -532,20 +532,8 @@ video {
   position: relative;
 }
 
-.top-\[5px\]{
-  top: 5px;
-}
-
 .-z-30{
   z-index: -30;
-}
-
-.-z-40{
-  z-index: -40;
-}
-
-.-z-50{
-  z-index: -50;
 }
 
 .z-50{
@@ -555,11 +543,6 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-32{
-  margin-top: 8rem;
-  margin-bottom: 8rem;
 }
 
 .mt-0{
@@ -584,10 +567,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
 }
 
 .block{
@@ -862,19 +841,14 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.before\:bg-gradient-btn-gold-to-black::before{
-  content: var(--tw-content);
-  background-image: linear-gradient(90deg, rgba(213,150,108,1) 0%, rgba(213,150,108,1) 78.2021%, rgba(21,21,21,1) 78.2022%, rgba(21,21,21,1) 100%);
-}
-
-.before\:bg-gradient-btn-back-gold-to-black::before{
-  content: var(--tw-content);
-  background-image: linear-gradient(90deg, rgba(213,150,108,1) 0%, rgba(213,150,108,1) 21.4588%, rgba(21,21,21,1) 21.4589%, rgba(21,21,21,1) 100%);
-}
-
 .before\:bg-gradient-btn-back-black-to-gold::before{
   content: var(--tw-content);
   background-image: linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(21,21,21,1) 21.4588%, rgba(213,150,108,1) 21.4589%, rgba(213,150,108,1) 100%);
+}
+
+.before\:bg-gradient-btn-gold-to-black::before{
+  content: var(--tw-content);
+  background-image: linear-gradient(90deg, rgba(213,150,108,1) 0%, rgba(213,150,108,1) 78.2021%, rgba(21,21,21,1) 78.2022%, rgba(21,21,21,1) 100%);
 }
 
 .before\:transition-all::before{
@@ -909,14 +883,14 @@ video {
   z-index: 10;
 }
 
-.after\:bg-gradient-btn-black-to-gold::after{
-  content: var(--tw-content);
-  background-image: linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(21,21,21,1) 78.2021%, rgba(213,150,108,1) 78.2022%, rgba(213,150,108,1) 100%);
-}
-
 .after\:bg-gradient-btn-back-gold-to-black::after{
   content: var(--tw-content);
   background-image: linear-gradient(90deg, rgba(213,150,108,1) 0%, rgba(213,150,108,1) 21.4588%, rgba(21,21,21,1) 21.4589%, rgba(21,21,21,1) 100%);
+}
+
+.after\:bg-gradient-btn-black-to-gold::after{
+  content: var(--tw-content);
+  background-image: linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(21,21,21,1) 78.2021%, rgba(213,150,108,1) 78.2022%, rgba(213,150,108,1) 100%);
 }
 
 .hover\:before\:translate-x-0:hover::before{
@@ -1027,24 +1001,8 @@ video {
     gap: 0.75rem;
   }
 
-  .md\:gap-\[5\.5rem\]{
-    gap: 5.5rem;
-  }
-
-  .md\:gap-\[4\.25rem\]{
-    gap: 4.25rem;
-  }
-
-  .md\:gap-32{
-    gap: 8rem;
-  }
-
   .md\:gap-\[6\.25rem\]{
     gap: 6.25rem;
-  }
-
-  .md\:p-10{
-    padding: 2.5rem;
   }
 
   .md\:px-0{
@@ -1072,18 +1030,12 @@ video {
     padding-bottom: 85px;
   }
 
-  .md\:pt-\[5\.5rem\]{
-    padding-top: 5.5rem;
-  }
-
   .md\:pb-20{
     padding-bottom: 5rem;
   }
 
-  .md\:text-heading-md-xl{
-    font-size: 4.375rem;
-    line-height: 4.063rem;
-    font-weight: 900;
+  .md\:pt-\[5\.5rem\]{
+    padding-top: 5.5rem;
   }
 
   .md\:text-heading-md-l{
@@ -1091,11 +1043,21 @@ video {
     line-height: 3.125rem;
     font-weight: 900;
   }
+
+  .md\:text-heading-md-xl{
+    font-size: 4.375rem;
+    line-height: 4.063rem;
+    font-weight: 900;
+  }
 }
 
 @media (min-width: 1280px){
   .xl\:-right-\[228px\]{
     right: -228px;
+  }
+
+  .xl\:left-\[165px\]{
+    left: 165px;
   }
 
   .xl\:top-\[190px\]{
@@ -1128,6 +1090,10 @@ video {
 
   .xl\:mt-\[60px\]{
     margin-top: 60px;
+  }
+
+  .xl\:mt-2{
+    margin-top: 0.5rem;
   }
 
   .xl\:block{
@@ -1206,8 +1172,16 @@ video {
     gap: 140px;
   }
 
+  .xl\:gap-\[220px\]{
+    gap: 220px;
+  }
+
   .xl\:gap-\[30px\]{
     gap: 30px;
+  }
+
+  .xl\:gap-6{
+    gap: 1.5rem;
   }
 
   .xl\:bg-almost-black{
@@ -1235,6 +1209,14 @@ video {
     padding-bottom: 5rem;
   }
 
+  .xl\:pb-32{
+    padding-bottom: 8rem;
+  }
+
+  .xl\:pt-\[104px\]{
+    padding-top: 104px;
+  }
+
   .xl\:text-body-m{
     font-size: 1.375rem;
     line-height: 2rem;
@@ -1247,9 +1229,21 @@ video {
     font-weight: 300;
   }
 
+  .xl\:text-heading-l{
+    font-size: 4.375rem;
+    line-height: 4.375rem;
+    font-weight: 900;
+  }
+
   .xl\:text-heading-m{
     font-size: 3.75rem;
     line-height: 3.75rem;
+    font-weight: 900;
+  }
+
+  .xl\:text-heading-s{
+    font-size: 2rem;
+    line-height: 2rem;
     font-weight: 900;
   }
 }

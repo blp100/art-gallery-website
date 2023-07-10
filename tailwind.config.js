@@ -25,6 +25,13 @@ module.exports = {
           fontWeight: "900",
         },
       ],
+      "heading-s": [
+        "2rem",
+        {
+          lineHeight: "2rem",
+          fontWeight: "900",
+        },
+      ],
       // tablet size
       "heading-md-xl": [
         "4.375rem",
