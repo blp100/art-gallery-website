@@ -681,6 +681,18 @@ video {
           background-clip: text;
 }
 
+.fill-almost-black{
+  fill: #151515;
+}
+
+.fill-white{
+  fill: #FFFFFF;
+}
+
+.fill-current{
+  fill: currentColor;
+}
+
 .p-6{
   padding: 1.5rem;
 }
