@@ -32,3 +32,6 @@
     - Attempt to css animation on a button, but still face z-index problem(old enemy?)
 07.09
     - Implemented CSS hover animation using ::before and ::after pseudo-elements. Initially unsure if it would work for button animation, but the end result turned out to be impressive. 
+07.10 
+    - Successfully resolved the z-index issue, which turned out to be a familiar challenge. 
+    - Completed all pages without integrating a real map. 
