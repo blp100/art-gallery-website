@@ -96,7 +96,7 @@ module.exports = {
         "1.25rem",
         {
           fontWeight: "800",
-          letterSpacing: "3.6px",
+          letterSpacing: "3.63px",
         },
       ],
     },
