@@ -16,31 +16,67 @@
     <title>Frontend Mentor | Art gallery website</title>
   </head>
   <body>
-    <div class="mx-auto my-32 w-fit">
-      <a
-        class="relative flex overflow-hidden before:absolute before:inset-0 before:-z-10 before:-translate-x-full before:bg-gradient-btn-gold-to-black before:transition-all before:duration-500 after:absolute after:inset-0 after:-z-20 after:bg-gradient-btn-black-to-gold hover:before:translate-x-0"
-        href="./location.html"
-      >
-        <span class="py-6 pl-8 pr-9 font-cursive text-btn-size text-white">
-          OUR LOCATION
-        </span>
-        <div class="p-6">
-          <img
-            class="mt-0.5"
-            src="./images/icon-arrow-right.svg"
-            alt="right arrow icon"
-            width="10px"
-            height="24px"
-            loading="lazy"
-          />
+    <section>
+      <div class="relative">
+        <div class="absolute">
+          <a
+            class="relative flex w-fit overflow-hidden before:absolute before:inset-0 before:z-20 before:translate-x-full before:bg-gradient-btn-back-black-to-gold before:transition-all before:duration-500 after:absolute after:inset-0 after:z-10 after:bg-gradient-btn-back-gold-to-black hover:before:translate-x-0"
+            href="./location.html"
+          >
+            <div class="p-6 z-50">
+              <img
+                class="mt-0.5"
+                src="./images/icon-arrow-left.svg"
+                alt="right arrow icon"
+                width="10px"
+                height="24px"
+                loading="lazy"
+              />
+            </div>
+            <span class="py-6 pl-8 pr-9 font-cursive text-btn-size text-white z-50">
+              BACK TO HOME
+            </span>
+          </a>
         </div>
-      </a>
-    </div>
+        <div class="block">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/image-map.png    1440w,
+                ./images/desktop/image-map@2x.png 2880w
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/image-map.png     768w,
+                ./images/tablet/image-map@2x.png 1536w
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              class="w-max"
+              src="./images/mobile/image-map.png"
+              alt="hero art"
+              width="375px"
+              height="240px"
+              loading="lazy"
+              srcset="
+                ./images/mobile/image-map.png    375w,
+                ./images/mobile/image-map@2x.png 750w
+              "
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
     <section class="bg-almost-black">
-      <div class="grid gap-12 px-4 pt-12 pb-14">
-        <div class="text-white text-heading-sm-m font-cursive uppercase">Our location</div>
-        <div class="flex gap-5 flex-col">
-          <h2 class="font-cursive text-heading-sm-s text-gold uppercase">
+      <div class="grid gap-12 px-4 pb-14 pt-12">
+        <div class="font-cursive text-heading-sm-m uppercase text-white">
+          Our location
+        </div>
+        <div class="flex flex-col gap-5">
+          <h2 class="font-cursive text-heading-sm-s uppercase text-gold">
             99 King Street
           </h2>
           <p class="font-sans text-body-sm-m text-white">
