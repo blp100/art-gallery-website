@@ -37,3 +37,9 @@
     - Completed all pages without integrating a real map. 
 07.11
     - Overslept today, but managed to do some research on the map API provided by http://leafletjs.com. It's quite interesting.
+07.12
+    - Attempt to customize the color settings on the map
+    - Changed the map tile layer using the leaflet-providers library.
+        - REF: https://leaflet-extras.github.io/leaflet-providers/preview/
+    - Found a helpful resource for implementing SVG icons with Leaflet. 
+        - REF: https://onestepcode.com/leaflet-markers-svg-icons/
