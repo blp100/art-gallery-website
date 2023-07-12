@@ -35,3 +35,5 @@
 07.10 
     - Successfully resolved the z-index issue, which turned out to be a familiar challenge. 
     - Completed all pages without integrating a real map. 
+07.11
+    - Overslept today, but managed to do some research on the map API provided by http://leafletjs.com. It's quite interesting.
