@@ -13,9 +13,26 @@
 
     <link rel="stylesheet" href="./styles/styles.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
     <title>Frontend Mentor | Art gallery website</title>
   </head>
   <body>
+    <!-- Map -->
+    <section>
+
+    </section>
     <section>
       <div class="relative">
         <div class="absolute md:left-10 xl:left-[165px]">
@@ -23,7 +40,7 @@
             class="relative flex w-fit overflow-hidden before:absolute before:inset-0 before:z-20 before:translate-x-full before:bg-gradient-btn-back-black-to-gold before:transition-all before:duration-500 after:absolute after:inset-0 after:z-10 after:bg-gradient-btn-back-gold-to-black hover:before:translate-x-0"
             href="./index.html"
           >
-            <div class="p-6 z-50">
+            <div class="z-50 p-6">
               <img
                 class="mt-0.5"
                 src="./images/icon-arrow-left.svg"
@@ -33,12 +50,54 @@
                 loading="lazy"
               />
             </div>
-            <span class="py-6 pl-8 pr-9 font-cursive text-btn-size text-white z-50">
+            <span
+              class="z-50 py-6 pl-8 pr-9 font-cursive text-btn-size text-white"
+            >
               BACK TO HOME
             </span>
           </a>
         </div>
-        <div class="block">
+        <div id="map" class="h-[550px] -z-10 mx-auto md:h-[600px]">
+          <script>
+            var map = L.map("map").setView([41.48, -71.3109], 16);
+  
+            // L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            //   attribution:
+            //     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            // }).addTo(map);
+  
+            L.tileLayer(
+              "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
+              {
+                maxZoom: 20,
+                attribution:
+                  '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+              }
+            ).addTo(map);
+  
+            // L.marker([51.5, -0.09])
+            //   .addTo(map)
+            //   .bindPopup("A pretty CSS popup.<br> Easily customizable.")
+            //   .openPopup();
+  
+            var marker = L.marker([41.4802, -71.3109]).addTo(map);
+  
+            var circle = L.circle([51.508, -0.11], {
+              color: "red",
+              fillColor: "#f03",
+              fillOpacity: 0.5,
+              radius: 500,
+            }).addTo(map);
+  
+            var polygon = L.polygon([
+              [51.509, -0.08],
+              [51.503, -0.06],
+              [51.51, -0.047],
+            ]).addTo(map);
+          </script>
+        </div>
+
+        <!-- <div class="block">
           <picture>
             <source
               srcset="
@@ -67,22 +126,30 @@
               "
             />
           </picture>
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="bg-almost-black">
-      <div class="flex flex-col gap-12 px-4 pb-14 pt-12 md:max-w-3xl md:mx-auto md:flex-row md:px-10 md:pt-[5.5rem] md:pb-20 md:gap-[6.25rem] xl:max-w-screen-xl xl:px-[85px] xl:gap-[220px] xl:pt-[104px] xl:pb-32">
-        <div class="font-cursive text-heading-sm-m uppercase text-white md:text-heading-md-l xl:text-heading-l xl:w-[350px]">
+      <div
+        class="flex flex-col gap-12 px-4 pb-14 pt-12 md:mx-auto md:max-w-3xl md:flex-row md:gap-[6.25rem] md:px-10 md:pb-20 md:pt-[5.5rem] xl:max-w-screen-xl xl:gap-[220px] xl:px-[85px] xl:pb-32 xl:pt-[104px]"
+      >
+        <div
+          class="font-cursive text-heading-sm-m uppercase text-white md:text-heading-md-l xl:w-[350px] xl:text-heading-l"
+        >
           Our location
         </div>
         <div class="flex flex-col gap-5 xl:gap-6">
-          <h2 class="font-cursive text-heading-sm-s uppercase text-gold xl:text-heading-s">
+          <h2
+            class="font-cursive text-heading-sm-s uppercase text-gold xl:text-heading-s"
+          >
             99 King Street
           </h2>
           <p class="font-sans text-body-sm-m text-white xl:text-body-m">
             Newport<br />RI 02840<br />United States of America
           </p>
-          <p class="font-sans text-body-sm-m text-white md:w-[398px] xl:text-body-m xl:mt-2 xl:w-[540px]">
+          <p
+            class="font-sans text-body-sm-m text-white md:w-[398px] xl:mt-2 xl:w-[540px] xl:text-body-m"
+          >
             Our newly opened gallery is located near the Edward King House on 99
             King Street, the Modern Art Gallery is free to all visitors and open
             seven days a week from 8am to 9pm.
