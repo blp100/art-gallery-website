@@ -12,12 +12,11 @@
     />
 
     <link rel="stylesheet" href="./styles/styles.css" />
-
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
     />
 
     <script
@@ -30,12 +29,10 @@
   </head>
   <body>
     <!-- Map -->
-    <section>
-
-    </section>
+    <section></section>
     <section>
       <div class="relative">
-        <div class="absolute md:left-10 xl:left-[165px]">
+        <div class="md:left-10 xl:left-[165px] bg-almost-black">
           <a
             class="relative flex w-fit overflow-hidden before:absolute before:inset-0 before:z-20 before:translate-x-full before:bg-gradient-btn-back-black-to-gold before:transition-all before:duration-500 after:absolute after:inset-0 after:z-10 after:bg-gradient-btn-back-gold-to-black hover:before:translate-x-0"
             href="./index.html"
@@ -57,15 +54,15 @@
             </span>
           </a>
         </div>
-        <div id="map" class="h-[550px] -z-10 mx-auto md:h-[600px]">
+        <div id="map" class="mx-auto h-[550px] md:h-[600px]">
           <script>
             var map = L.map("map").setView([41.48, -71.3109], 16);
-  
+
             // L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
             //   attribution:
             //     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             // }).addTo(map);
-  
+
             L.tileLayer(
               "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
               {
@@ -74,21 +71,33 @@
                   '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
               }
             ).addTo(map);
-  
+
+            const svgIcon = L.divIcon({
+              html: `
+                <svg width="66" height="88" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M0 56V0h66v56H45L33 88 21 56H0Z" fill="#151515" />
+                    <circle fill="#D5966C" cx="33" cy="28" r="12" />
+                  </g>
+                </svg>`,
+              className: "",
+              iconSize: [66, 88],
+              iconAnchor: [30, 60],
+            });
             // L.marker([51.5, -0.09])
             //   .addTo(map)
             //   .bindPopup("A pretty CSS popup.<br> Easily customizable.")
             //   .openPopup();
-  
-            var marker = L.marker([41.4802, -71.3109]).addTo(map);
-  
+            var marker = L.marker([41.4802, -71.3109], { icon: svgIcon }).addTo(map);
+            // var marker = L.marker([41.4802, -71.3109]).addTo(map);
+
             var circle = L.circle([51.508, -0.11], {
               color: "red",
               fillColor: "#f03",
               fillOpacity: 0.5,
               radius: 500,
             }).addTo(map);
-  
+
             var polygon = L.polygon([
               [51.509, -0.08],
               [51.503, -0.06],
