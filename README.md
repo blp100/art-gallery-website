@@ -48,7 +48,7 @@ Users should be able to:
 ### Continued development
 After completing this challenge, I realized how fascinating it is to create custom CSS animations from scratch. Additionally, I discovered that importing and implementing a map is not as difficult as I initially thought, but customizing the map styles presents another challenge.
 
-I would like to refine the map styles later. And it's to take on the **Boss level**. 
+I would like to refine the map styles later. And it's time to take on the **Boss level**. 
 ### Useful resources
 - setup resposive image with Html tag
     - REF: https://web.dev/learn/design/picture-element/
