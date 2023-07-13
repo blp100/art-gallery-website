@@ -67,18 +67,18 @@ I would like to refine the map styles later. And it's to take on the **Boss leve
 
 ## Development Dairy
 
-07.02 tailwind css can install in dev dependencies with prettier
-07.03 figure out how to setup resposive image with Html tag
+- 07.02 tailwind css can install in dev dependencies with prettier
+- 07.03 figure out how to setup resposive image with Html tag
     - REF: https://web.dev/learn/design/picture-element/
            https://web.dev/learn/design/responsive-images/
            https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes
-07.04 setting up mobile index.html
+- 07.04 setting up mobile index.html
     - <span styles="display: inline-block"></span> replace <br /> for Responsive setting
-07.05 study grid system
+- 07.05 study grid system
     - REF: https://css-tricks.com/snippets/css/complete-guide-grid/
     - thinking about iOS scorlling down will reveal background
     - can solve with body background color setting
-07.06
+- 07.06
     - Forget to change `src` attribute to `srcset` setting in <picture> element cause display problem
     - Attempt: first try, it work to change text color by background, but the result it's not I want to.
         - REF: https://css-tricks.com/methods-contrasting-text-backgrounds/
@@ -86,7 +86,7 @@ I would like to refine the map styles later. And it's to take on the **Boss leve
         - REF: https://hypercolor.dev/
         - REF: https://cssgradient.io/
     - To access a parameter that you have set in the `tailwind.config.js` file using the syntax `${theme("colors.white")}`. This will retrieve the value of the `colors.white` parameter defined in your Tailwind CSS configuration.
-07.07
+- 07.07
     - Fixed text problem, I did the two things wrong.
         - Attempted using absolute positioning to fix the logo placement but encountered a limitation where CSS cannot combine percentage and numeric values simultaneously.
         - Implemented an alternative approach but forgot to include `position: relative` when using `position: absolute`.
@@ -95,22 +95,22 @@ I would like to refine the map styles later. And it's to take on the **Boss leve
             -REF: https://codepen.io/kjbrum/pen/wBBLXx
         - Learned about the :before CSS pseudo-element and the usage of aria- HTML attributes.
         - Became more familiar with the transform property and its capabilities. 
-07.08
+- 07.08
     - Attempt to css animation on a button, but still face z-index problem(old enemy?)
-07.09
+- 07.09
     - Implemented CSS hover animation using ::before and ::after pseudo-elements. Initially unsure if it would work for button animation, but the end result turned out to be impressive. 
-07.10 
+- 07.10 
     - Successfully resolved the z-index issue, which turned out to be a familiar challenge. 
     - Completed all pages without integrating a real map. 
-07.11
+- 07.11
     - Overslept today, but managed to do some research on the map API provided by http://leafletjs.com. It's quite interesting.
-07.12
+- 07.12
     - Attempt to customize the color settings on the map
     - Changed the map tile layer using the leaflet-providers library.
         - REF: https://leaflet-extras.github.io/leaflet-providers/preview/
     - Found a helpful resource for implementing SVG icons with Leaflet. 
         - REF: https://onestepcode.com/leaflet-markers-svg-icons/
-07.13
+- 07.13
     - add the land marker. 
     - Finish challenge.
 
