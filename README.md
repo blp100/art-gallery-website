@@ -65,7 +65,7 @@ I would like to refine the map styles later. And it's to take on the **Boss leve
 - Pure CSS Button animation
     -REF: https://codepen.io/kjbrum/pen/wBBLXx
 
-## Development Dairy
+### Development Dairy
 
 - 07.02 tailwind css can install in dev dependencies with prettier
 - 07.03 figure out how to setup resposive image with Html tag
