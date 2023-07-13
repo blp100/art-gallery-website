@@ -13,10 +13,10 @@
 
     <link rel="stylesheet" href="./styles/styles.css" />
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
     />
 
     <script
@@ -32,7 +32,7 @@
     <section></section>
     <section>
       <div class="relative">
-        <div class="md:left-10 xl:left-[165px] bg-almost-black">
+        <div class="bg-gold md:left-10 xl:left-[165px]">
           <a
             class="relative flex w-fit overflow-hidden before:absolute before:inset-0 before:z-20 before:translate-x-full before:bg-gradient-btn-back-black-to-gold before:transition-all before:duration-500 after:absolute after:inset-0 after:z-10 after:bg-gradient-btn-back-gold-to-black hover:before:translate-x-0"
             href="./index.html"
@@ -56,7 +56,11 @@
         </div>
         <div id="map" class="mx-auto h-[550px] md:h-[600px]">
           <script>
-            var map = L.map("map").setView([41.48, -71.3109], 16);
+            var map = L.map("map", {
+              maxZoom: 20,
+              minZoom: 10,
+              zoomControl: false,
+            }).setView([41.48, -71.3109], 16);
 
             // L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
             //   attribution:
@@ -88,21 +92,25 @@
             //   .addTo(map)
             //   .bindPopup("A pretty CSS popup.<br> Easily customizable.")
             //   .openPopup();
-            var marker = L.marker([41.4802, -71.3109], { icon: svgIcon }).addTo(map);
+            var marker = L.marker([41.4802, -71.3109], { icon: svgIcon }).addTo(
+              map
+            );
             // var marker = L.marker([41.4802, -71.3109]).addTo(map);
 
-            var circle = L.circle([51.508, -0.11], {
-              color: "red",
-              fillColor: "#f03",
-              fillOpacity: 0.5,
-              radius: 500,
-            }).addTo(map);
+            L.control.zoom({ position: "bottomright" }).addTo(map);
 
-            var polygon = L.polygon([
-              [51.509, -0.08],
-              [51.503, -0.06],
-              [51.51, -0.047],
-            ]).addTo(map);
+            // var circle = L.circle([51.508, -0.11], {
+            //   color: "red",
+            //   fillColor: "#f03",
+            //   fillOpacity: 0.5,
+            //   radius: 500,
+            // }).addTo(map);
+
+            // var polygon = L.polygon([
+            //   [51.509, -0.08],
+            //   [51.503, -0.06],
+            //   [51.51, -0.047],
+            // ]).addTo(map);
           </script>
         </div>
 
