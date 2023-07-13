@@ -1,4 +1,71 @@
-## What I learnt
+# Frontend Mentor Challenge 5 - Art Gallery Website
+
+This is a solution to the [Pomodoro app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/art-gallery-website-yVdrZlxyA). 
+## Table of contents
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [New Stuff for me](#new-stuff-for-me)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [Development Dairy](#development-dairy)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+## Overview
+This challenge is truly inspiring to me. The styles, colors, and spacing, everything is absolutely perfect, which fuels my passion for becoming a frontend developer. I love creating beautiful things and bringing them to life.
+
+Taking on this challenge is also a great opportunity for me to explore map development, an area where I have little experience.
+
+And... Here I am, ready to take on the challenge and make it happen! 
+
+### The challenge
+Users should be able to:
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- Bonus: Use Leaflet JS to create an interactive location map with custom location pin
+
+### Links
+- Source Code: [Gihub Source](https://github.com/blp100/art-gallery-website)
+- Live Site: [Vercel Link](https://blp100.github.io/art-gallery-website/location.html)
+---
+## My process
+### Built with
+- Setup tailwindcss environment
+- Import Image and Default Setting from challenge package
+- Semantic HTML5 markup
+- Mobile-first workflow
+- `Bonus:` Leaflet JS custom location pin [leaflet.js](https://leafletjs.com/)
+- [tailwindcss](https://tailwindcss.com//)
+
+## New Stuff for me
+- Learned about the `<picture>` and `<srcset>` HTML tags for responsive images.
+- Explored the combination of Tailwind CSS with pure HTML for styling.
+- Made animation with tailwindcss
+- Utilized the Leaflet.js library for incorporating interactive maps into the project.
+
+### Continued development
+After completing this challenge, I realized how fascinating it is to create custom CSS animations from scratch. Additionally, I discovered that importing and implementing a map is not as difficult as I initially thought, but customizing the map styles presents another challenge.
+
+I would like to refine the map styles later. And it's to take on the **Boss level**. 
+### Useful resources
+- setup resposive image with Html tag
+    - REF: https://web.dev/learn/design/picture-element/
+    - https://web.dev/learn/design/responsive-images/
+    - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes
+
+- Grid system
+    - REF: https://css-tricks.com/snippets/css/complete-guide-grid/
+
+- Gradient webtool
+    - REF: https://hypercolor.dev/
+    - REF: https://cssgradient.io/
+
+- Pure CSS Button animation
+    -REF: https://codepen.io/kjbrum/pen/wBBLXx
+
+## Development Dairy
 
 07.02 tailwind css can install in dev dependencies with prettier
 07.03 figure out how to setup resposive image with Html tag
@@ -43,3 +110,13 @@
         - REF: https://leaflet-extras.github.io/leaflet-providers/preview/
     - Found a helpful resource for implementing SVG icons with Leaflet. 
         - REF: https://onestepcode.com/leaflet-markers-svg-icons/
+07.13
+    - add the land marker. 
+    - Finish challenge.
+
+## Author
+- Website - [Personal site](https://po-cheng-yeh.vercel.app/)
+- Frontend Mentor - [@blp100](https://www.frontendmentor.io/profile/blp100)
+## Acknowledgments
+I am grateful to my friends who have supported me, even though they prefer to remain anonymous.
+
