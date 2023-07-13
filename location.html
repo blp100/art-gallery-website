@@ -41,7 +41,7 @@
               <img
                 class="mt-0.5"
                 src="./images/icon-arrow-left.svg"
-                alt="right arrow icon"
+                alt="left arrow icon"
                 width="10px"
                 height="24px"
                 loading="lazy"
@@ -62,19 +62,19 @@
               zoomControl: false,
             }).setView([41.48, -71.3109], 16);
 
-            // L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-            //   attribution:
-            //     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            // }).addTo(map);
+            L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+              attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            }).addTo(map);
 
-            L.tileLayer(
-              "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
-              {
-                maxZoom: 20,
-                attribution:
-                  '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
-              }
-            ).addTo(map);
+            // L.tileLayer(
+            //   "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
+            //   {
+            //     maxZoom: 20,
+            //     attribution:
+            //       '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+            //   }
+            // ).addTo(map);
 
             const svgIcon = L.divIcon({
               html: `
@@ -113,37 +113,6 @@
             // ]).addTo(map);
           </script>
         </div>
-
-        <!-- <div class="block">
-          <picture>
-            <source
-              srcset="
-                ./images/desktop/image-map.png    1440w,
-                ./images/desktop/image-map@2x.png 2880w
-              "
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/tablet/image-map.png     768w,
-                ./images/tablet/image-map@2x.png 1536w
-              "
-              media="(min-width: 768px)"
-            />
-            <img
-              class="w-max"
-              src="./images/mobile/image-map.png"
-              alt="hero art"
-              width="375px"
-              height="240px"
-              loading="lazy"
-              srcset="
-                ./images/mobile/image-map.png    375w,
-                ./images/mobile/image-map@2x.png 750w
-              "
-            />
-          </picture>
-        </div> -->
       </div>
     </section>
     <section class="bg-almost-black">
