@@ -120,3 +120,4 @@ I would like to refine the map styles later. And it's time to take on the **Boss
 ## Acknowledgments
 I am grateful to my friends who have supported me, even though they prefer to remain anonymous.
 
+And special thanks: [Bruno Moleta](https://www.frontendmentor.io/profile/brunomoleta)

@@ -28,7 +28,7 @@
             MODERN<br />ART&nbsp;GALLERY
           </h1>
         </div>
-        <div class="md:w-7/12 xl:w-[540px] -z-30">
+        <div class="-z-30 md:w-7/12 xl:w-[540px]">
           <picture>
             <source
               srcset="
@@ -66,7 +66,10 @@
             from a spark of inspiration. Will these pieces inspire you? Visit us
             and find out.
           </p>
-          <a class="flex w-fit xl:-ml-[65px] xl:mt-16 relative before:transition-all before:duration-500 overflow-hidden before:absolute before:inset-0 before:-z-10 before:-translate-x-full before:bg-gradient-btn-gold-to-black hover:before:translate-x-0 after:bg-gradient-btn-black-to-gold after:inset-0 after:absolute after:-z-20" href="./location.html">
+          <a
+            class="relative flex w-fit overflow-hidden before:absolute before:inset-0 before:-z-10 before:-translate-x-full before:bg-gradient-btn-gold-to-black before:transition-all before:duration-500 after:absolute after:inset-0 after:-z-20 after:bg-gradient-btn-black-to-gold hover:before:translate-x-0 xl:-ml-[65px] xl:mt-16"
+            href="./location.html"
+          >
             <span class="py-6 pl-8 pr-9 font-cursive text-btn-size text-white">
               OUR LOCATION
             </span>
@@ -97,7 +100,7 @@
             and find out.
           </p>
           <a
-            class="w-fit relative flex overflow-hidden before:absolute before:inset-0 before:-z-10 before:-translate-x-full before:bg-gradient-btn-gold-to-black before:transition-all before:duration-500 after:absolute after:inset-0 after:-z-20 after:bg-gradient-btn-black-to-gold hover:before:translate-x-0"
+            class="relative flex w-fit overflow-hidden before:absolute before:inset-0 before:-z-10 before:-translate-x-full before:bg-gradient-btn-gold-to-black before:transition-all before:duration-500 after:absolute after:inset-0 after:-z-20 after:bg-gradient-btn-black-to-gold hover:before:translate-x-0"
             href="./location.html"
           >
             <span class="py-6 pl-8 pr-9 font-cursive text-btn-size text-white">
@@ -117,10 +120,10 @@
         </div>
       </div>
     </header>
-    <section
+    <main
       class="px-4 py-[7.5rem] md:mx-auto md:max-w-3xl md:px-10 xl:max-w-screen-xl xl:px-[85px]"
     >
-      <div
+      <section
         class="grid md:grid-cols-[auto_398px] md:gap-3 xl:grid-cols-[auto_635px]"
       >
         <picture class="md:w-[398px] xl:w-[635px]">
@@ -151,24 +154,24 @@
             "
           />
         </picture>
-        <div class="md:-order-1 md:w-[223px] xl:w-[350px]">
+        <div
+          class="flex flex-col justify-center gap-8 md:-order-1 md:w-[223px] xl:w-[350px]"
+        >
           <h2
-            class="mt-6 font-cursive text-heading-sm-m uppercase text-almost-black xl:mt-[60px] xl:text-heading-m"
+            class="font-cursive text-heading-sm-m uppercase text-almost-black xl:text-heading-m"
           >
             Your Day
             <span class="inline-block"
               >at the <span class="md:inline-block">Gallery</span></span
             >
           </h2>
-          <p
-            class="mt-5 font-sans text-body-sm-m text-dark-grey md:mt-6 xl:mt-8 xl:text-body-m"
-          >
+          <p class="font-sans text-body-sm-m text-dark-grey xl:text-body-m">
             Wander through our distinct collections and find new insights about
             our artists. Dive into the details of their creative process.
           </p>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         class="mt-4 grid gap-4 md:mt-3 md:grid-cols-[398px_280px] md:grid-rows-[313px_auto] md:gap-3 xl:mt-[30px] xl:grid-cols-[635px_445px] xl:grid-rows-[313px_auto] xl:gap-[30px]"
       >
         <picture class="md:row-span-2">
@@ -240,8 +243,8 @@
             collections influence you.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="bg-almost-black">
       <div
         class="mx-auto flex flex-col gap-[38px] px-8 py-12 md:max-w-3xl md:flex-row md:gap-16 md:px-10 md:py-14 xl:max-w-screen-xl xl:gap-[140px] xl:px-[85px] xl:py-20"
