@@ -4,7 +4,8 @@
   "description": "![Design preview for the Art gallery website coding challenge](./preview.jpg)",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "tailwindcss -i ./styles/global.css -o ./styles/styles.css --minify"
   },
   "keywords": [],
   "author": "Po-Cheng Yeh",
