@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 - Source Code: [Gihub Source](https://github.com/blp100/art-gallery-website)
-- Live Site: [Vercel Link](https://blp100.github.io/art-gallery-website/location.html)
+- Live Site: [Vercel Link](https://blp100.github.io/art-gallery-website)
 ---
 ## My process
 ### Built with
